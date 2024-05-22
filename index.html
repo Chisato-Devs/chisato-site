@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html data-n-head="" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="discord бот, музыкальный discord бот, Чисато, Chisato" name="keywords"/>
+    <meta content="Chisato!" data-hid="author" name="author"/>
+    <meta content="Communicate in three languages, manage the economy, play games, role-play the world and enjoy convenient moderation tools!"
+          data-hid="description"
+          name="description"/>
+    <meta content="Chisato - Discord Bot" data-hid="og:title" property="og:title"/>
+    <meta content="Communicate in three languages, manage the economy, play games, role-play the world and enjoy convenient moderation tools!"
+          data-hid="og:description"
+          property="og:description"/>
+    <meta content="website" data-hid="og:type" name="og:type" property="og:type"/>
+    <meta content="favicon.png" data-hid="og:image" data-n-head="ssr" name="og:image" property="og:image"/>
+    <meta content="#d0f" name="theme-color"/>
+    <meta content="summary" data-hid="twitter:card" name="twitter:card" property="twitter:card"/>
+    <meta content="Chisato - Discord Bot" data-hid="twitter:title" name="twitter:title" property="twitter:title"/>
+    <meta content="Communicate in three languages, manage the economy, play games, role-play the world and enjoy convenient moderation tools!"
+          data-hid="twitter:description" name="twitter:description"
+          property="twitter:description"/>
+    <meta content="favicon.png" data-hid="twitter:image" name="twitter:image" property="twitter:image"/>
+    <meta charset="utf-8" data-hid="charset"/>
+    <meta content="yes" data-hid="mobile-web-app-capable" name="mobile-web-app-capable"/>
+    <meta content="Chisato - Discord Bot" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title"/>
+    <title>Chisato - Discord Bot</title>
+    <link data-n-head="ssr" href="favicon.png" rel="icon" type="image/x-icon"/>
+    <link data-hid="shortcut-icon" data-n-head="ssr" href="favicon.png" rel="shortcut icon"/>
+    <link data-hid="apple-touch-icon" data-n-head="ssr" href="favicon.png" rel="apple-touch-icon" sizes="512x512"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;200;300;400;500;600;700;800;900;1,100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+</html>
+<body>
+<div data-server-rendered="true">
+    <div id="__layout">
+        <div class="body-bg w-full fixed top-0 z-50">
+            <nav class="flex w-full flex-wrap items-center justify-start p-4 transition-all max-w-7xl mx-auto">
+                <div class="flex items-center text-black">
+                    <a aria-current="page"
+                       class="flex items-center space-x-2 transition-opacity hover:opacity-80 nuxt-link-exact-active nuxt-link-active"
+                       href="./">
+                        <img alt="Чисато"
+                             class="logo-chisato"
+                             src="https://cdn.discordapp.com/avatars/1066753199421263923/0e4f8b1f2c04c3463058ea598d804eec.png?size=256">
+                    </a>
+                </div>
+                <div class="ml-auto block lg:hidden">
+                    <button class="flex items-center rounded border border-black px-3 py-2 hover:opacity-75 text-gray-600"
+                            id="menu-toggle-button">
+                        <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Меню</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ml-auto w-full flex-grow pt-6 lg:flex lg:w-auto lg:items-center lg:pt-0 hidden">
+                    <ul class="list-reset flex-1 items-center justify-end space-x-0 space-y-2 lg:flex lg:space-x-8 lg:space-y-0"
+                        id="menu-list">
+                        <a href="./"><span
+                                class="block cursor-pointer rounded-lg bg-gray-200 px-4 py-2 font-whitney text-lg font-medium transition-all lg:rounded-none lg:bg-transparent lg:px-0 lg:py-2 lg:hover:opacity-80"
+                                data-en="Home" data-ru="Главная"
+                                role="link">Главная</span></a>
+                        <a href="./privacy.html"><span
+                                class="block cursor-pointer rounded-lg bg-gray-200 px-4 py-2 font-whitney text-lg font-medium transition-all lg:rounded-none lg:bg-transparent lg:px-0 lg:py-2 bg-gray-300 opacity-60 lg:opacity-60"
+                                data-en="Privacy Policy" data-ru="Конфиденциальность"
+                                role="link">Конфиденциальность</span></a>
+                        <a href="https://discord.com/oauth2/authorize?client_id=1066753199421263923&scope=bot+applications.commands&permissions=8">
+                            <span class="block cursor-pointer rounded-lg bg-gray-200 px-4 py-2 font-whitney text-lg font-medium transition-all lg:rounded-none lg:bg-transparent lg:px-0 lg:py-2 lg:hover:opacity-80 text-gray-600"
+                                  data-en="Invite a Bot" data-ru="Пригласить бота"
+                                  role="link">Пригласить бота
+                            </span>
+                        </a>
+                        <button class="icon-flex w-full rounded-lg border border-black border-opacity-40 px-8 py-2 opacity-80 transition-all hover:border-opacity-80 hover:opacity-100 lg:w-auto"
+                                data-en="English" data-ru="Русский" id="language-toggle-button"
+                                onclick="changeLanguage()"> Русский
+                        </button>
+                    </ul>
+                </div>
+                <!---->
+            </nav>
+        </div>
+        <div class="flex h-screen flex-col">
+            <div>
+                <section>
+                    <div class="chisato-block z-10 landing flex px-6 bg-gradient-to-b from-gray-50 to-white relative">
+                        <div class="flex max-w-6xl mx-auto flex-col text-center py-20 pb-36 lg:pb-56 lg:pt-60 z-10">
+                            <h1 class="font-sans title text-5xl font-bold tracking-tight sm:leading-[1.1] sm:text-7xl text-gray-900">
+                                <span class="text-discord" data-en="Chisato!" data-ru="Чисато!">Чисато!</span>
+                            </h1>
+                            <p class="description font-whitney description mt-6 text-lg tracking-tight text-gray-700"
+                               data-en="Communicate in three languages, manage the economy, play games, role-play the world and enjoy convenient moderation tools!"
+                               data-ru="Общайтесь на трех языках, управляйте экономикой, играйте в игры, ролевой мир и наслаждайтесь удобными инструментами модерации!">
+                                Общайтесь на трех языках, управляйте экономикой, играйте в игры, ролевой мир и
+                                наслаждайтесь удобными инструментами модерации! </p>
+                            <div class="flex flex-col buttons gap-x-4 mt-10 justify-center w-full md:flex-row">
+                                <a class="mb-2 flex h-12 items-center justify-center rounded-lg bg-discord px-4 py-1 font-whitney text-lg font-bold text-white shadow-2xl shadow-discord/50 transition-all"
+                                   href="https://discord.com/oauth2/authorize?client_id=1066753199421263923&scope=bot+applications.commands&permissions=8">
+                                    <svg class="mr-3 w-8 fill-current text-white" height="55" viewBox="0 0 71 55"
+                                         width="71"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect height="55" width="71"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <ff data-en="Invite a Bot" data-ru="Пригласить бота">Пригласить бота</ff>
+                                </a>
+                                <a class="ring-gray-200 ring-1 rounded-lg h-12 px-4 py-1 hover:bg-gray-50 shadow-2xl transition-all font-whitney text-lg font-bold text-gray-700"
+                                   href="https://discord.gg/H7VMSRGgaQ">
+                                    <ff data-en="Support Server" data-ru="Сервер поддержки">Сервер поддержки</ff>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="2xl:space-y-72 space-y-32 px-4 sm:px-8 mb-72" id="features">
+                    <div class="card-1 flex flex-col items-center justify-center lg:flex-row lg:px-0">
+                        <img alt="banner" class="mb-10 w-full max-w-md drop-shadow lg:mb-0 lg:max-w-lg"
+                             draggable="false"
+                             src="/images/1.webp">
+                        <div class="mt-8 max-w-xl text-center lg:ml-12 lg:mt-0 lg:text-left">
+                            <h2 class="mb-2 tracking-tight text-4xl font-bold leading-snug text-gray-900"
+                                data-en="Convenient and Beautiful player and Karaoke"
+                                data-ru="Удобный и Красивый плеер и Караоке"> Удобный и
+                                Красивый плеер и Караоке </h2>
+                            <p class="tracking-tight text-gray-700 text-xl"
+                               data-en="Looking for an elegant and functional music player? Get to know our music player, which will provide an unsurpassed music listening experience. The bot also has a karaoke function where you can sing along with your friends!"
+                               data-ru="                                    Ищете элегантный и функциональный музыкальный плеер? Познакомьтесь с нашим музыкальным плеером, который обеспечит непревзойденные впечатления от прослушивания музыки. В боте присутствует также функция караоке, где вы можете подпевать вместе с друзьями!">
+                                Ищете элегантный и функциональный
+                                музыкальный плеер? Познакомьтесь с нашим музыкальным плеером, который обеспечит
+                                непревзойденные впечатления от прослушивания музыки. В боте присутствует также функция
+                                караоке, где вы можете подпевать вместе с друзьями! </p>
+                        </div>
+                    </div>
+                    <div class="card-2 flex flex-col-reverse items-center justify-center lg:flex-row lg:px-0">
+                        <div class="mt-8 max-w-xl text-center lg:mr-12 lg:mt-0 lg:text-left">
+                            <h2 class="mb-2 tracking-tight text-4xl font-bold leading-snug text-gray-900"
+                                data-en="Private Rooms"
+                                data-ru="Приватные комнаты"> Приватные
+                                комнаты </h2>
+                            <p class="tracking-tight text-gray-700 text-xl"
+                               data-en="If you are looking for a way to create more private and exclusive spaces on your Discord server, private rooms are the perfect solution. Use them to increase privacy, improve focus, and strengthen connections in your Discord community."
+                               data-ru="Если вы ищете способ создать более приватные и эксклюзивные пространства на своем сервере Discord, приватные комнаты - идеальное решение. Воспользуйтесь ими, чтобы повысить конфиденциальность, улучшить фокусировку и укрепить связи в своем сообществе Discord.">
+                                Если вы ищете способ создать более
+                                приватные и эксклюзивные пространства на своем сервере Discord, приватные комнаты -
+                                идеальное решение. Воспользуйтесь ими, чтобы повысить конфиденциальность, улучшить
+                                фокусировку и укрепить связи в своем сообществе Discord. </p>
+                        </div>
+                        <img alt="banner" class="mb-10 w-full max-w-md lg:mb-0 lg:max-w-lg" draggable="false"
+                             src="/images/2.png">
+                    </div>
+                    <div class="card-3 flex flex-col items-center justify-center lg:flex-row lg:px-0">
+                        <img alt="banner" class="mb-10 w-full max-w-md drop-shadow lg:mb-0 lg:max-w-lg"
+                             draggable="false"
+                             src="/images/3.png">
+                        <div class="mt-8 max-w-xl text-center lg:ml-12 lg:mt-0 lg:text-left">
+                            <h2 class="mb-2 tracking-tight text-4xl font-bold leading-snug text-gray-900"
+                                data-en="Moderation"
+                                data-ru="Модерация">
+                                Модерация </h2>
+                            <p class="tracking-tight text-gray-700 text-xl"
+                               data-en="Moderation is an integral part of managing the Discord server, ensuring compliance with the rules and creating a safe and pleasant environment for all participants. Discord provides moderators with a set of powerful community management tools, including the ability to ban, muddy and warn users."
+                               data-ru="Модерация является неотъемлемой частью управления сервером Discord, обеспечивая соблюдение правил и создание безопасной и приятной среды для всех участников. Discord предоставляет модераторам набор мощных инструментов для управления сообществом, включая возможность банить, мутить и предупреждать пользователей.">
+                                Модерация является неотъемлемой частью
+                                управления сервером Discord, обеспечивая соблюдение правил и создание безопасной и
+                                приятной среды для всех участников. Discord предоставляет модераторам набор мощных
+                                инструментов для управления сообществом, включая возможность банить, мутить и
+                                предупреждать пользователей. </p>
+                        </div>
+                    </div>
+                    <div class="card-4 flex flex-col-reverse items-center justify-center lg:flex-row lg:px-0">
+                        <div class="mt-8 max-w-xl text-center lg:mr-12 lg:mt-0 lg:text-left">
+                            <h2 class="mb-2 tracking-tight text-4xl font-bold leading-snug text-gray-900"
+                                data-en="Server banner"
+                                data-ru="Серверный баннер"> Серверный
+                                баннер </h2>
+                            <p class="tracking-tight text-gray-700 text-xl"
+                               data-en="The server banner in Discord is an image that is displayed at the top of the server screen and provides brief information about the server. It serves as a visual representation of the server and helps users quickly identify it among many other servers."
+                               data-ru="Серверный баннер в Discord - это изображение, которое отображается в верхней части экрана сервера и предоставляет краткую информацию о сервере. Он служит визуальным представлением сервера и помогает пользователям быстро идентифицировать его среди множества других серверов.">
+                                Серверный баннер в Discord - это
+                                изображение, которое отображается в верхней части экрана сервера и предоставляет краткую
+                                информацию о сервере. Он служит визуальным представлением сервера и помогает
+                                пользователям быстро идентифицировать его среди множества других серверов. </p>
+                        </div>
+                        <img alt="banner" class="mb-10 w-full max-w-md drop-shadow lg:mb-0 lg:max-w-lg"
+                             draggable="false"
+                             src="/images/4.png">
+                    </div>
+                </section>
+                <section class="bg-discord px-6 py-10">
+                    <div class="max-w-7xl mx-auto flex flex-col items-center justify-between lg:flex-row">
+                        <div class="max-w-xl text-center text-gray-50 lg:text-left">
+                            <h1 class="normal-text mb-2 tracking-tight font-ginto text-5xl font-extrabold"
+                                data-en="Unlock Chisato's true potential!"
+                                data-ru="Раскрой истинный потенциал Чисато!"> Раскрой
+                                истинный потенциал Чисато! </h1>
+                            <p class="mb-3 font-whitney text-lg tracking-tight"
+                               data-en="Chisato has a unique set of talents, skills and abilities. She is smart, creative and hardworking. She has a passion for learning and growth, and is always looking for new opportunities to improve."
+                               data-ru="Чисато обладает уникальным набором талантов, навыков и способностей. Она умна, креативна и трудолюбива. У нее есть страсть к обучению и росту, и она всегда ищет новые возможности для совершенствования.">
+                                Чисато обладает уникальным набором
+                                талантов, навыков и способностей. Она умна, креативна и трудолюбива. У нее есть страсть
+                                к обучению и росту, и она всегда ищет новые возможности для совершенствования. </p>
+                        </div>
+                        <button class="group m-auto flex items-center justify-between rounded-lg border border-white border-opacity-40 px-6 py-3 font-ginto text-xl font-semibold text-white transition-all hover:border-opacity-90 lg:m-0">
+                            <svg class="mr-4 h-8 w-8 fill-current text-white" height="55" viewBox="0 0 71 55" width="71"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect height="55" width="71"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <ff data-en="Invite a Bot" data-ru="Пригласить бота">Пригласить бота</ff>
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <footer class="container-footer bg-gray-100 text-center text-gray-900 lg:text-left">
+                <div class="flex flex-col py-10 text-center md:flex-row md:text-left max-w-7xl mx-auto px-4 lg:px-0">
+                    <div class="mb-12 mr-0 w-full font-whitney md:mb-0 md:mr-12 md:max-w-lg md:flex-row">
+                        <div class="mb-2 flex flex-col items-center justify-center md:flex-row md:justify-start">
+                            <img alt="Чисато"
+                                 class="logo-chisato-footer"
+                                 src="https://cdn.discordapp.com/avatars/1066753199421263923/0e4f8b1f2c04c3463058ea598d804eec.png?size=256">
+                        </div>
+                        <p class="description-footer text-gray-600 tracking-tight"
+                           data-en="Chisato! Private rooms, logs, music and many other useful features..."
+                           data-ru="Чисато! Приватные комнаты, логи, музыка и много других полезных функций..."> Чисато!
+                            Приватные комнаты, логи,
+                            музыка и много других полезных функций...</p>
+                        <p class="description-footer text-gray-600 tracking-tight" data-en="© 2023 - 2024 Chisato."
+                           data-ru="© 2023 - 2024 Чисато.">© 2023 - 2024 Чисато.</p>
+                        <div class="creators">
+                            <p class="text-gray-600 tracking-tight" data-en="Website Developer -"
+                               data-ru="Разработчик сайта -">Разработчик сайта -</p>
+                            <p>
+                                <a class="credits hover:underline"
+                                   href="https://lordofthesun.glitch.me/">lordofsunshine</a>
+                            </p>
+                            <p class="text-gray-600 tracking-tight" data-en="The developers of the bot -"
+                               data-ru="Разработчики бота -" style="margin-top:5px">Разработчики
+                                бота -</p>
+                            <p>
+                                <a class="credits hover:underline" href="https://discord.com/users/484390171563917312/">tallsman</a>,
+                                <a class="credits hover:underline" href="https://discord.com/users/975160842993692713/">krisef</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-1 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="font-whitney">
+                            <h6 class="mb-1 flex justify-center font-ginto font-semibold md:justify-start"
+                                data-en="Pages"
+                                data-ru="Страницы">
+                                Страницы </h6>
+                            <div class="space-y-2">
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="Main" data-ru="Главная" href="./">Главная</a>
+                                </p>
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="Privacy Policy"
+                                       data-ru="Политика Конфиденциальности" href="./privacy.html">Политика
+                                        Конфиденциальности</a>
+                                </p>
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="Documentation"
+                                       data-ru="Документация"
+                                       href="./docs.html">Документация</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="font-whitney">
+                            <h6 class="mb-1 flex justify-center font-ginto font-semibold md:justify-start"
+                                data-en="Links"
+                                data-ru="Ссылки"> Ссылки </h6>
+                            <div class="space-y-2">
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="Invite a Bot"
+                                       data-ru="Пригласить бота"
+                                       href="https://discord.com/oauth2/authorize?client_id=1066753199421263923&scope=bot+applications.commands&permissions=8">Пригласить
+                                        бота</a>
+                                </p>
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="Support Server"
+                                       data-ru="Сервер поддержки"
+                                       href="https://discord.gg/GgfNADhDJj">Сервер поддержки</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="font-whitney">
+                            <h6 class="mb-1 flex justify-center font-ginto font-semibold md:justify-start"
+                                data-en="Monitorings"
+                                data-ru="Мониторинги">
+                                Мониторинги </h6>
+                            <div class="space-y-2">
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="We are on Boticord"
+                                       data-ru="Мы на Boticord" href="https://boticord.top/bot/chisato">Мы
+                                        на Boticord</a>
+                                </p>
+                                <p>
+                                    <a class="text-gray-700 hover:underline" data-en="We are on BSDC"
+                                       data-ru="Мы на BSDC"
+                                       href="https://bots.server-discord.com/1066753199421263923"
+                                       rel="noopener noreferrer nofollow"
+                                       target="_blank">Мы на BSDC</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
