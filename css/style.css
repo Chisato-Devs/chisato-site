@@ -4762,6 +4762,8 @@ pre[class*="language-"] {
 
     .auto-size-two {
         font-size: 38px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
         word-break: break-word;
     }
 }
@@ -4796,6 +4798,16 @@ pre[class*="language-"] {
         width: 80px;
         height: auto;
         overflow: hidden;
+    }
+    .gap-x-4 {
+        gap: 0.5rem;
+    }
+    .bg-white {
+        margin-top: 3rem;
+    }
+    .body-bg {
+        background: #fbfbfdfa;
+        backdrop-filter: blur(20px);
     }
 }
 
